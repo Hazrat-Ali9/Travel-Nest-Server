@@ -58,7 +58,7 @@ async function run() {
             const result = await cursor.toArray();
             res.send(result);
         })
-
+// Get Function 
         app.get('/countries', async (req, res) => {
             const cursor = countriesCollection.find();
             const result = await cursor.toArray();
